@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+@layer base {
+  body {
+    font-size: 1rem;
+    background-color: #e9e6d7;
+    font-family: Manrope;
+  }
+  h1 {
+    @apply lg:text-[62px];
+  }
+  h2 {
+    @apply text-[1.63rem] leading-[2.8rem] lg:text-[42px] lg:leading-[4rem];
+  }
+  h3 {
+    @apply lg:text-[30px];
+  }
+  h4 {
+  }
+  p {
+  }
+  .p_small {
+  }
+  a {
+  }
+  button {
+  }
+  .bg-style {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+  .sb {
+    @apply border border-red-500;
+  }
+
+  .wrapper {
+    @apply mx-auto w-[1170px];
+  }
+
+  .bg-pattern {
+    @apply border border-elipse bg-[url('/assets/images/bg.svg')] bg-top bg-no-repeat;
+  }
+  .bg-style {
+    @apply bg-[url('/assets/images/bg2.svg')] bg-top  bg-no-repeat;
+  }
+
+  .text-clip {
+    clip-path: ellipse(50% 40% at 50% 49%);
+  }
+
+  .button1 {
+    @apply rounded-md px-[18px] py-3;
+  }
+
+  .button2 {
+    @apply rounded-md px-8 py-3;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    max-width: 1170px;
+  }
+
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 160px);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+/* CUSTOM COMPONENT STYLES */
+@layer components {
+}
+
+/* CUSTOM UTILITIES STYLES */
+@layer utilities {
+}
